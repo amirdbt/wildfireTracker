@@ -22,11 +22,7 @@ const App = () => {
       </div>
     );
   }
-  return (
-    <>
-      <Map />
-    </>
-  );
+  return <>{isSuccess && <Map events={data.data.events} />}</>;
 };
 
 export default App;
