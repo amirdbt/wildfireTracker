@@ -9,15 +9,18 @@ const App = () => {
     const { events } = data.data;
     console.log(events);
   }
+  if (isError) {
+    console.log("Error");
+  }
   if (isLoading) {
     return (
       <div className="loader">
         <FadeLoader
           color="#335977"
-          height="25"
-          width="5"
-          radius="2"
-          margin="2"
+          height="25px"
+          width="5px"
+          radius="2px"
+          margin="2px"
         />
       </div>
     );

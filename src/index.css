@@ -17,3 +17,25 @@ body {
   align-items: center;
   min-height: 100vh;
 }
+.location-info {
+  position: absolute;
+  z-index: 1;
+  top: 50px;
+  right: 50px;
+  width: 25rem;
+  min-height: 16rem;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 30px;
+  font-size: 1.4rem;
+  color: darkgrey;
+}
+
+.location-info ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.location-info li {
+  padding: 1rem 0rem;
+}
