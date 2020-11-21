@@ -1,7 +1,11 @@
-import React from "react";
+const { default: Map } = require("./components/Map");
 
 const App = () => {
-  return <div>Wildfire tracker</div>;
+  return (
+    <>
+      <Map />
+    </>
+  );
 };
 
 export default App;
