@@ -2,6 +2,7 @@ import Map from "./components/Map";
 import { useQuery } from "react-query";
 import { fetchData } from "./api";
 import FadeLoader from "react-spinners/FadeLoader";
+import Header from "./components/Header";
 
 const App = () => {
   const { data, isError, isLoading, isSuccess } = useQuery("events", fetchData);
@@ -25,7 +26,12 @@ const App = () => {
       </div>
     );
   }
-  return <>{isSuccess && <Map events={data.data.events} />}</>;
+  return (
+    <>
+      <Header />
+      {isSuccess && <Map events={data.data.events} />}
+    </>
+  );
 };
 
 export default App;
